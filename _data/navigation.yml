@@ -3,68 +3,68 @@
     - title: Documentation Home
       url: /
     - title: Introduction
-      url: /01-introduction.html
+      url: /introduction.html
     - title: Installation
-      url: /02-installation.html
+      url: /installation.html
     - title: Directory Structure
-      url: /03-directory-structure.html
+      url: /directory-structure.html
     - title: Request Lifecycle
-      url: /04-request-lifecycle.html
+      url: /request-lifecycle.html
     - title: Configuration
-      url: /05-configuration.html
+      url: /configuration.html
 
 - title: HTTP
   items:
     - title: Routing
-      url: /06-routing.html
+      url: /routing.html
     - title: Controllers
-      url: /07-controllers.html
+      url: /controllers.html
     - title: Request
-      url: /08-request.html
+      url: /request.html
     - title: Responses and Redirects
-      url: /09-responses-and-redirects.html
+      url: /responses-and-redirects.html
     - title: Views and Helpers
-      url: /10-views-and-helpers.html
+      url: /views-and-helpers.html
     - title: Middleware
-      url: /11-middleware.html
+      url: /middleware.html
     - title: Validation
-      url: /12-validation.html
+      url: /validation.html
 
 - title: Database
   items:
     - title: Database
-      url: /13-database.html
+      url: /database.html
     - title: Query Builder
-      url: /14-query-builder.html
+      url: /query-builder.html
     - title: Models
-      url: /15-models.html
+      url: /models.html
 
 - title: Application Services
   items:
     - title: Service Container
-      url: /16-container.html
+      url: /container.html
     - title: Sessions and Cookies
-      url: /17-sessions-and-cookies.html
+      url: /sessions-and-cookies.html
     - title: Authentication and Roles
-      url: /18-authentication-and-roles.html
+      url: /authentication-and-roles.html
     - title: API Authentication
-      url: /19-api-authentication.html
+      url: /api-authentication.html
     - title: Cache
-      url: /20-cache.html
+      url: /cache.html
     - title: Rate Limiting
-      url: /21-rate-limiting.html
+      url: /rate-limiting.html
 
 - title: Production
   items:
     - title: Exception Handling
-      url: /22-exception-handling.html
+      url: /exception-handling.html
     - title: Security
-      url: /23-security.html
+      url: /security.html
     - title: Command-line Tools
-      url: /24-command-line-tools.html
+      url: /command-line-tools.html
     - title: Deployment
-      url: /25-deployment.html
+      url: /deployment.html
     - title: Performance
-      url: /26-performance.html
+      url: /performance.html
     - title: Troubleshooting
-      url: /27-troubleshooting.html
+      url: /troubleshooting.html
