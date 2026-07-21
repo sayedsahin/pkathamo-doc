@@ -1,50 +1,52 @@
----
-layout: default
-title: Pkathamo Documentation
-permalink: /
----
+# Introduction
 
-# Pkathamo Documentation
+**Pkathamo** is a lightweight PHP framework built around three core principles: **Lightweight**, **Fast** and **Simple**.
 
-Pkathamo is a lightweight PHP framework designed for building super-fast, simple and efficient web applications.
+It provides the essential features required for modern web applications while keeping the request lifecycle direct, predictable and easy to understand.
 
-## Documentation
+Pkathamo is designed for developers who need more than a minimal router but do not want the complexity, hidden behavior or runtime overhead of a large full-stack framework.
 
-### Getting Started
+## Core Philosophy
 
-- [Introduction](introduction.html)
-- [Installation](installation.html)
-- [Directory Structure](directory-structure.html)
-- [Request Lifecycle](request-lifecycle.html)
-- [Configuration](configuration.html)
+- **Performance First** – Every design decision prioritizes fast execution, low memory usage and minimal request-time work.
+- **Simple by Design** – Clean APIs and a clear application structure let developers focus on application logic instead of framework internals.
+- **Efficient Development** – Practical built-in tools reduce repetitive code without taking control away from the developer.
+- **Minimal Overhead** – Services and drivers are initialized only when needed, avoiding unnecessary work during every request.
+- **Predictable Behavior** – Important operations remain explicit, with minimal magic, hidden state or deeply nested abstractions.
+- **Developer Friendly** – Familiar PHP patterns, readable source code and straightforward configuration make the framework easy to learn and debug.
 
-### HTTP Layer
+## What Makes Pkathamo Different
 
-- [Routing](routing.html)
-- [Controllers](controllers.html)
-- [Request](request.html)
-- [Responses and Redirects](responses-and-redirects.html)
-- [Views and Helpers](views-and-helpers.html)
-- [Middleware](middleware.html)
-- [Validation](validation.html)
+Pkathamo combines a lightweight runtime with the practical features commonly required by production applications.
 
-### Data and Services
+A minimal framework may provide only routing and responses, requiring developers to assemble authentication, validation, sessions, caching and rate limiting separately.
 
-- [Database](database.html)
-- [Query Builder](query-builder.html)
-- [Models](models.html)
-- [Service Container](container.html)
-- [Sessions and Cookies](sessions-and-cookies.html)
-- [Authentication and Roles](authentication-and-roles.html)
-- [API Authentication](api-authentication.html)
-- [Cache](cache.html)
-- [Rate Limiting](rate-limiting.html)
+A large full-stack framework may provide those features through a more complex boot process, service lifecycle, ORM layer and abstraction stack.
 
-### Production
+Pkathamo takes a focused approach:
 
-- [Exception Handling](exception-handling.html)
-- [Security](security.html)
-- [Command-line Tools](command-line-tools.html)
-- [Deployment](deployment.html)
-- [Performance](performance.html)
-- [Troubleshooting](troubleshooting.html)
+```text
+Lightweight core
++
+Essential application features
++
+Direct and predictable execution
+```
+
+
+## Main components
+
+| Component | Purpose |
+|---|---|
+| FastRoute | HTTP route matching and route cache |
+| Request | GET, POST, files, cookies, JSON, headers and request metadata |
+| Response | HTML, JSON, headers, status and redirects |
+| MiddlewareKernel | Global and route middleware execution |
+| QueryBuilder | Fluent PDO query construction and raw SQL execution |
+| Validator | Fluent validation with filtered validated data |
+| Session | Native or null session driver facade |
+| Auth | Session and bearer authentication state |
+| Cache | Array, file, APCu, Redis or Memcached storage |
+| RateLimiter | File, APCu, Redis or Memcached counters |
+| ExceptionHandler | Central HTML, JSON and CLI error handling |
+| Container | Constructor dependency resolution and singletons |

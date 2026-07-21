@@ -1,9 +1,7 @@
 - title: Getting Started
   items:
-    - title: Documentation Home
-      url: /
     - title: Introduction
-      url: /introduction.html
+      url: /
     - title: Installation
       url: /installation.html
     - title: Directory Structure
