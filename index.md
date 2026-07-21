@@ -1,6 +1,6 @@
 # Introduction
 
-**Pkathamo** is a lightweight PHP framework built around three core principles: **Lightweight**, **Fast** and **Simple**.
+**Pkathamo** is a lightweight PHP framework built around three core principles: **Performance**, **Simplicity** and **Efficiency**.
 
 It provides the essential features required for modern web applications while keeping the request lifecycle direct, predictable and easy to understand.
 
