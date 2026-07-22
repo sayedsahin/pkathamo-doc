@@ -2,6 +2,8 @@
 
 This repository contains the official documentation for the Pkathamo PHP framework.
 
+https://sayedsahin.github.io/pkathamo/
+
 ## Documentation Website
 
 Visit the published documentation:
