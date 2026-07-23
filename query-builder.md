@@ -8,10 +8,17 @@ The Query Builder is a mutable PDO query object. Terminal methods execute the qu
 $users = db()->table('users')->get();
 ```
 
-Model query:
+```php
+$users = User::query()->get(); //Model query
+```
+
+With connection argument
+```php
+$users = db('pgsql')->table('users')->get();
+```
 
 ```php
-$users = User::query()->get();
+$users = User::query('sqlite')->get(); //Model query
 ```
 
 ## Select columns

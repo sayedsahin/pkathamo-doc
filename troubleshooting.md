@@ -13,7 +13,7 @@ Or remove `storage/cache/config.php` and let the next bootstrap rebuild it.
 ## New or changed routes do not appear
 
 ```bash
-php bin/cache-routes.php
+php bin/cache-route.php
 ```
 
 In development, enable debug mode to disable route cache.

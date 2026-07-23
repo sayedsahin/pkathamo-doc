@@ -48,6 +48,44 @@ new User();
 
 Each `query()` call starts with fresh query state, preventing conditions, bindings, ordering or limits from being shared between separate query chains.
 
+## Default Connection
+
+Models use the connection configured in `database.default` unless the model defines `$defaultConnection`.
+
+```php
+namespace App\Models;
+
+use App\Systems\QueryBuilder;
+
+final class User extends QueryBuilder
+{
+    protected ?string $defaultConnection = 'sqlite';
+
+    protected string $defaultTable = 'users';
+
+    protected array $defaultSelect = [
+        'name',
+        'email',
+    ];
+}
+```
+
+The model now uses the `sqlite` connection automatically:
+
+```php
+$users = User::query()->get();
+```
+
+Pass a connection name to `query()` only when the current query must use another configured connection:
+
+```php
+$users = User::query('mysql')->get();
+```
+
+The explicit connection replaces `$defaultConnection` for that query.
+
+When `$defaultConnection` is not defined or remains `null`, the model uses the application's default database connection.
+
 ## Default Selected Columns
 
 By default, a model selects all columns:
@@ -106,6 +144,21 @@ FROM users
 WHERE status = ?
 ORDER BY name ASC
 LIMIT 20
+```
+
+## Default Database Connection
+
+```php
+namespace App\Models;
+
+use App\Systems\QueryBuilder;
+
+final class User extends QueryBuilder
+{
+    protected string $defaultTable = 'users';
+
+    protected array $defaultConnection = 'sqlite';
+}
 ```
 
 ## Method Chaining
